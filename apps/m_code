@@ -1,0 +1,15 @@
+f4
+h1 = (h(:,3) + h(:,4))/2;
+h2 = (h(:,3) - h(:,4))/2;
+
+figure; plot(abs(h(:,1)), '*')
+hold on; plot(abs(h1), 'o')
+figure; plot(abs(h(:,2)), '*')
+hold on; plot(abs(h2), 'o')
+
+figure; plot(angle(h(:,1)), '*')
+hold on; plot(angle(h1), 'o')
+figure; plot(angle(h(:,2)), '*')
+hold on; plot(angle(h2), 'o')
+
+

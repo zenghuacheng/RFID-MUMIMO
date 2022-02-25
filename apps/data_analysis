@@ -1,0 +1,10 @@
+fileID0 = fopen('ant0.bin');
+fileID1 = fopen('ant1.bin');
+tmp0 = fread(fileID0, 'float');
+tmp1 = fread(fileID1, 'float');
+
+d = [tmp0(1:2:end) + 1i*tmp0(2:2:end)    tmp1(1:2:end) + 1i*tmp1(2:2:end)];
+
+
+figure; plot(abs(d(:,1)),'r*-');
+figure; plot(abs(d(:,2)),'b*-');
